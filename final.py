@@ -3,6 +3,11 @@ import streamlit as st
 import joblib
 import pandas as pd
 import numpy as np
+import xgboost as xgb
+from sklearn.impute import SimpleImputer
+from sklearn.compose import ColumnTransformer
+from category_encoders import BinaryEncoder
+from sklearn.pipeline import Pipeline
 
 # Load pre-trained pipeline and column names
 inputs = joblib.load("columns_name.pkl")
