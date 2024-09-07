@@ -14,7 +14,7 @@ inputs = joblib.load("columns_name.pkl")
 pipeline = joblib.load("pipeline.pkl")
 
 # Streamlit app header and images
-st.header("       Mushroom Classifier")
+st.header("                Mushroom Classifier")
 
 col1, col2 = st.columns(2)
 with col1:
